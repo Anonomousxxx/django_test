@@ -1,0 +1,9 @@
+django
+django-allauth
+django-apscheduler
+apscheduler
+django-redis
+redis
+requests
+psycopg2
+

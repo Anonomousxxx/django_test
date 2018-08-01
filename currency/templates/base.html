@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Exchange rates{% endblock %}</title>
+</head>
+<body>
+<center>
+    <header>
+        <h1>Exchange rates</h1>
+        {% if user.is_authenticated %}
+        <a href="{% url 'currency:logout' %}">logout</a>
+        {% else %}
+        <a href="{% url 'currency:login' %}">login</a> / <a href="{% url 'currency:signup' %}">signup</a>
+        {% endif %}
+        <hr>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</center>
+</body>
+</html>

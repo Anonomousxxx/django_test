@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome, {{ user.username }}!</h2>
+{% if exchange_rates %}
+{% for exchange_rate in exchange_rates %}
+<li>{{ exchange_rate}}
+    <button type="button">
+        <a href="/currency/delete/{{ exchange_rate.id }}">Delete</a>
+    </button>
+</li>
+{% endfor %}
+<br>
+{% else %}
+<h3>No exchange rates to track</h3>
+{% endif %}
+<a href="{% url 'currency:add' %}">Add exchange rates</a>
+<br>
+<a href="{% url 'currency:home' %}">Refresh</a>
+{% endblock %}
+
+
