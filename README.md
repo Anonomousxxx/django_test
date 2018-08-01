@@ -6,7 +6,7 @@ Installing guide:
 Python3 is required
 
 Install requirements:
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 
 Install postgres
 
