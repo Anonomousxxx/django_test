@@ -30,5 +30,7 @@ python3 manager.py runserver --noreload
 Tests:
 python3 manager.py test currency
 
+Check site at: http://localhost:7000/
+
 
 
