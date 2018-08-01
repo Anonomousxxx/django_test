@@ -1,6 +1,5 @@
 # django_test
-Django test project
-
+Django exchange rates test project
 
 Installing guide:
 
